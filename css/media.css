@@ -1,0 +1,50 @@
+ @media screen and (max-width:470px) {
+    .milestones{
+        margin-left: 10px;
+    }
+  
+}
+/*  */
+@media screen and (max-width:550px) {
+   .card{
+       margin-right: auto;
+       margin-left: 10px;
+   }
+    
+} 
+@media screen and (min-width:1440px){
+    .card{
+        width: 30rem;
+        margin-bottom: 55px;
+    }
+}
+@media screen and (max-width:1000px){
+    .card{
+        margin-right: 10px;
+    }
+    .abt-sec{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        width: 95%;
+        min-height: 100vh;
+    }
+    .quote-img{
+        margin-left: 20px;
+        margin-top: 5px;
+      }
+      .contact-set{
+          flex-direction: column;
+      }
+    .contact-left{
+        width: 100%;
+    }
+    .contact-right{
+        width: 100%;
+    }
+}
+

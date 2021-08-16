@@ -1,0 +1,257 @@
+@font-face {
+  font-family: Epilogue;
+  src: url("../fonts/epilogue.ttf");
+}
+@font-face {
+  font-family: JosefinSans;
+  src: url(../fonts/josefinSans.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+.font-a {
+  font-family: JosefinSans;
+}
+.banner {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logo {
+  color: black;
+}
+#hero-page {
+  background: url(../img/hero.jpg) center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+.overlay {
+  background: rgb(58, 58, 58);
+  background: linear-gradient(
+    360deg,
+    rgba(49, 49, 49, 0.633) 57%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: cover;
+  z-index: 5;
+  min-height: 100vh;
+  backdrop-filter: blur(5px);
+}
+/* Nav */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
+  z-index: 10;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: black;
+}
+.navbar a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+.navbar a:hover::after {
+  width: 100%;
+  color: black;
+}
+
+/* Banner */
+
+.banner-set {
+  margin-top: 70px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+}
+.btn-banner {
+  display: flex;
+  align-self: center;
+}
+.banner-para {
+  font-family: Epilogue;
+  /* width: 40%; */
+  text-align: center;
+}
+.resize {
+  width: 80%;
+  margin-top: 10px;
+  align-self: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.search-icon {
+  height: 20px;
+  padding-left: 3px;
+}
+.scroll-text {
+  /* position: absolute; */
+  /* top: 95vh; */
+  margin-top: 35px;
+  margin-bottom: 6px;
+
+  opacity: 0.5;
+  cursor: pointer;
+
+  color: white;
+}
+.scroll-down-icon {
+  height: 20px;
+  animation: scroll1 1s ease-in-out infinite;
+  opacity: 0.5;
+  /* margin-bottom: 300px; */
+}
+@keyframes scroll1 {
+  0% {
+    position: relative;
+    top: -3px;
+  }
+  33% {
+    position: relative;
+  }
+  66% {
+    position: relative;
+    top: -3px;
+  }
+  100% {
+    position: relative;
+  }
+}
+.scroll-text:hover {
+  opacity: 0.7;
+  transition: ease-in-out 0.5s;
+}
+
+/* Services */
+
+#services {
+  min-height: 100vh;
+  background: url(../img/service-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.services {
+  backdrop-filter: blur(2px);
+  min-height: 100vh;
+  width: 100%;
+}
+.card {
+  width: 23rem;
+  margin-right: 65px;
+  margin-bottom: 60px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+.card img{
+  border-radius: 10px 10px 3px 3px;
+}
+.img-4{
+  margin-bottom: 35px;
+}
+
+/* About Section */
+
+#about{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(204, 204, 0);
+}
+.left-side{
+  width: 50%;
+  min-height: 90vh;
+  font-family: Poppins;
+  line-height: 30px;
+  font-weight: 100;
+}
+.right-side{
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  min-height: 90vh;
+  margin: 20px 10px;
+  font-family: Poppins;
+  
+  
+}
+.right-side h1{
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+.milestones{
+  margin-top: 50px;
+  margin-left: 45px;
+}
+/* corona */
+
+.corona{
+  min-height: 40vh;
+  width: 100%;
+  /* background-color: whitesmoke; */
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-2{
+  opacity: 0.5;
+}
+.cor-para{
+  opacity: 0.8;
+  word-spacing: 5px;
+  margin-bottom: 0ch;
+}
+.cor-btn{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* contact us */
+
+#contact{
+  width: 100%;
+
+}
+.contact-left{
+  width: 50%;
+  /* background-color: rgb(77, 9, 9); */
+  /* min-height: 9; */
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+.contact-right{
+  width: 50%;
+  /* background-color: yellow; */
+  /* min-height: 90vh; */
+  margin-left: 10px;
+
+}
+ form{
+   font-family: Poppins;
+ }
+ .checkbox{
+   opacity: 0.5;
+ }
+
+ 
